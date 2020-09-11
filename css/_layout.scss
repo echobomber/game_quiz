@@ -14,15 +14,6 @@ img{
     height: 100vh;
     background: #000000;
     position: relative;
-    .Quiz-Start, .End, .Lose{
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    // flex-direction: column;
-    justify-content: center;
-    // flex-wrap: nowrap;
     img{
         width: 200px;
         margin-bottom: 20px;
@@ -32,6 +23,12 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
+}
+@media (max-width: 768px){
+    .Quiz{
+        margin-top: 15px;
+    }
 }
 .Quiz, .Quiz-Start{
     position: absolute;
@@ -41,6 +38,13 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.Quiz-Start, .End, .Lose{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
 }
 .Qus-Panel{
     background: #181e24;
