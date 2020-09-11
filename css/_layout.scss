@@ -14,11 +14,15 @@ img{
     height: 100vh;
     background: #000000;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    .Quiz-Start, .End, .Lose{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    // flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
     img{
         width: 200px;
         margin-bottom: 20px;
